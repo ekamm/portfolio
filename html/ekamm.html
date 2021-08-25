@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Elizabeth Kamm </title>
+	
+	<link rel="stylesheet" href="../css/refinedcss.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+	
+</head>
+
+<style>
+	
+body {
+
+   background-image: ;
+	background-color:#000000;
+		background-position: center;
+	background-repeat:no-repeat; 
+  background-attachment: fixed;
+	background-size: 1300px;
+}
+
+
+}
+h1{text-align: center;
+		padding-bottom: 10px;
+		}
+	
+h2{
+        text-align: center; 
+		}		
+		
+.home {
+pointer-events: none;
+ display:inline;
+color:antiquewhite;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 15px; 
+  line-height: 1px;
+  border-radius: 2px;
+	background-color: rgba(149,0,2,0.6);
+	background-opacity: 10%;}	
+.footer {
+	font-size: 10px;
+position: fixed;  
+left: 1px;  
+bottom: 5px;  
+right: 10px;   
+width: 100%; 
+	height: 20px;
+  
+color:antiquewhite;  
+text-align: center; }  
+	
+	
+
+	
+	</style>
+	
+
+</script>
+	
+<body>
+	 
+<!--LEFT header elements bar set up-->
+	<div class="header">
+		
+
+
+	<!--remember that the a href attaches to css header.a {} -->
+		
+	
+	<a href="ekamm.html" class="logo"> Elizabeth Kamm </a>
+	
+			
+	
+	<a href="#header" class="logo2"><!--SUBHEADER DOWN-->Artist and Graphic Designer
+			</a>
+	
+		
+<!--LEFT header elements bar end-->	
+
+		
+<!--RIGHT header elements bar start-->
+	
+  <div class="header-right">
+	  
+    <!--a class is the hover ability, #home, continuing on to the other specific tags. Also need to figure out how to add classes and references as well as hyperlinks...-->
+	  <a href="ekamm.html"><span class="home"> Home</span></a> 
+	  <a href="aboutmefinal.html"><span class="links">About</span></a>
+    <a href="portfoliofinal.html"> <span class="highlight">Portfolio</span></a>
+	    <a href="contactfinal.html"> <span class="links">Contacts</span></a>
+  
+</div>
+	  
+	
+
+<!--end of header bar set up-->
+	</div></div>
+
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+ 
+  <img src="../images/originals/mov4.gif" style="width:100%" height="%">
+  <div class="text"></div>
+</div>
+	
+
+
+	<div class="mySlides fade">
+  
+  <img src="../images/originals/mov1.gif" style="width:100%" height="%">
+  <div class="text"></div>
+</div> 
+	
+	
+	<div class="mySlides fade">
+	<img src="../originals/mov5.gif" style="width:100%">
+  <div class="text"></div>
+</div>
+	
+	<div class="mySlides fade">
+ 
+  <img src="../images/originals/mov2.gif" style="width:100%">
+  <div class="text"></div>
+</div>
+
+	
+	
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+
+<!--end of contact set up-->
+ <!-- start of footer set up -->
+<div class="footer">
+	<footer><small> Copyright 2021, &copy; Elizabeth Kamm</small> </footer>
+</div>
+
+
+ <!-- end of footer set up -->
+
+</body>
+</html>
